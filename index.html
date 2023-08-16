@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquries.css">
+    
+    
+</head>
+<body>
+    <div id="particles-js"></div>
+       <nav id="desktop-nav">
+        <div class="logo">Berlin Bruno</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="about">About</a></li>
+                <li><a href="prijects">Project</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+       </nav> 
+       <nav id="hamburger-nav">
+        <div class="logo">Berlin Bruno</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span>-</span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="about" onclick="toggleMenu()">About</a></li>
+                <li><a href="prijects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+       </nav>
+       <section id="profile">
+        <div class="selection_pic-cointainer">
+            <img src="./assets/profile-pic.png" alt="Berlin Bruno Profile Picture">
+        </div>
+        <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Berlin Bruno</h1>
+                <p class="section_text_p2">FullStack Developer</p>
+            <div class="btn-cointainer">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-cointainer">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/berlinbruno'">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/berlinbruno'">
+            </div>
+        </div>
+       </section>
+       <section id="about">
+       </section>
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
