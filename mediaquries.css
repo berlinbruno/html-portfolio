@@ -76,6 +76,14 @@
         flex-wrap: wrap;
     }
 
+    .about-cointainer{
+        display: block;
+    }
+
+    .details-cointainer{
+        margin-bottom: 0.5rem;
+    }
+
     .contact-info-upper-cointainer{
         gap: 1rem;
     }
