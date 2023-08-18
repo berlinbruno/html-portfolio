@@ -1,3 +1,14 @@
+@media screen and (max-width: 1400px){
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-cointainer{
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav{
         display: none;
@@ -5,5 +16,104 @@
 
     #hamburger-nav{
         display: flex;
+        z-index: 2;
+    }
+
+    #skill, .skill-detail-cointainer{
+        margin-top: 2rem;
+    }
+
+    #profile, .section-cointainer{
+        display: block;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    section, .section-cointainer{
+        height: fit-content;
+    }
+
+    section{
+        margin: 0.5%;
+    }
+
+    .section_pic-cointainer{
+        width: 275px;
+        height: 275;
+        margin: 0 auto 2rem;
+    }
+
+    .about-cointainer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #contact{
+        height: 40vh;
+    }
+
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article{
+        font-size: 1rem;
+    }
+
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-cointainer, 
+    .contact-info-upper-cointainer,
+    .btn-cointainer{
+        flex-wrap: wrap;
+    }
+
+    .contact-info-cointainer{
+        margin: 0;
+    }
+
+    .contact-info-cointainer p,
+    .nav-links li a{
+        font-size: 1rem;
+    }
+
+    .skill-subtitle{
+        font-size: 1.25rem;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .section_pic-cointainer{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .section__text__p2{
+        font-size: 1.25rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .text-cointainer{
+        text-align: justify;
     }
 }
