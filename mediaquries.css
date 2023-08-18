@@ -76,6 +76,10 @@
         flex-wrap: wrap;
     }
 
+    .contact-info-upper-cointainer{
+        gap: 1rem;
+    }
+
     .contact-info-cointainer{
         margin: 0;
     }
