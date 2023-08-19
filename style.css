@@ -207,6 +207,7 @@
 
     .section_text p{
         font-weight: 600;
+        text-align: justify;
     }
 
     .section_text_p1 {
