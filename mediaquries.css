@@ -4,6 +4,10 @@
         margin-bottom: 6rem;
     }
 
+    #projects{
+        height: auto;
+    }
+
     .about-cointainer{
         flex-wrap: wrap;
     }
@@ -43,6 +47,7 @@
         width: 275px;
         height: 275;
         margin: 0 auto 2rem;
+        justify-content: center;
     }
 
     .about-cointainer{

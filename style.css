@@ -19,7 +19,7 @@
     body {
         margin-left: 5px;
         margin-right: 5px;
-        padding-top: 60px;
+        padding-top: 30px;
         z-index: 900;
         position:relative;
         font-family: 'Poppins', sans-serif;
@@ -52,7 +52,7 @@
     nav{
         justify-content: space-around;
         align-items: center;
-        height: 17vh;
+        height: 15vh;
     }
 
     .nav-links{
@@ -80,7 +80,7 @@
     }
 
     .logo:hover{
-        cursor: default;
+        cursor:default;
     }
 
     /* Hamburger menu */
@@ -202,12 +202,11 @@
 
     .section_text{
         align-self: center;
-        text-align: center; 
+        text-align: center;
     }
 
     .section_text p{
         font-weight: 600;
-        text-align: justify;
     }
 
     .section_text_p1 {
@@ -307,6 +306,11 @@
         border-radius: 2rem;
     }
 
+    .about-section-text{
+        text-align: justify;
+        text-indent: 2em;
+    }
+
     .arrow{
         position: absolute;
         right: -5rem;
@@ -355,7 +359,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         gap: 2.5rem;
-        justify-content: space-around;
+        justify-content:space-between;
     }
 
     .airticle{
