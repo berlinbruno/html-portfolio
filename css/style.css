@@ -176,11 +176,11 @@ a:hover{
         position: relative;
     }
 
-    .section-cointainer{
+    .section-container{
         display: flex;
     }
 
-    /* Profile Secton*/
+    /* Profile Section*/
 
     #profile{
         display: flex;
@@ -189,7 +189,7 @@ a:hover{
         height: 80vh;
     }
 
-    .section_pic-cointainer{
+    .section_pic-container{
         display: flex;
         height: 400px;
         width: 400px;
@@ -224,7 +224,7 @@ a:hover{
         color: white;
     }
 
-    #socials-cointainer{
+    #socials-container{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
@@ -240,7 +240,7 @@ a:hover{
 
     /* Buttons */
 
-    .btn-cointainer{
+    .btn-container{
         display: flex;
         justify-content: center;
         gap:  1rem;
@@ -281,24 +281,24 @@ a:hover{
         border :rgb(36, 34, 34) 0.1rem solid
     }
 
-    .btn-cointainer{
+    .btn-container{
         gap: 1rem;
     }
 
     /* About Section*/
 
-    .about-cointainer{
+    .about-container{
         gap: 2rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
-    .about-details-cointainer{
+    .about-details-container{
         justify-content: center;
         flex-direction: column;
     }
 
-    .about-cointainer, .about-details-cointainer{
+    .about-container, .about-details-container{
         display: flex;
     }
 
@@ -317,22 +317,22 @@ a:hover{
         bottom: 2.5rem;
     }
 
-    .details-cointainer{
+    .details-container{
         padding: 1.5rem;
-        flex: 1;
-        background: rgba(71, 65, 65, 0.062);
+        flex: 1 1 20vw;
+        background: rgba(0, 0, 0, 0.507);
         border-radius: 2rem;
         border: 0.1rem solid;
         border-color: rgb(255, 255, 255);
         text-align: center;
     }
 
-    .section-cointainer{
+    .section-container{
         gap: 4rem;
         height: 80%;
     }
 
-    .section_pic-cointainer{
+    .section_pic-container{
         height: 400px;
         width: 400px;
         margin: auto 0;
@@ -347,13 +347,13 @@ a:hover{
         margin-bottom: 2rem;
     }
 
-    .skill-details-cointainer{
+    .skill-details-container{
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
-    .article-cointainer{
+    .article-container{
         display: flex;
         text-align: initial;
         flex-wrap: wrap;
@@ -375,7 +375,7 @@ a:hover{
 
     /* Projects Section */
 
-    .color-cointainer{
+    .color-container{
         border-color: white;
         background: rgba(0, 0, 0, 0.5);
     }
@@ -405,7 +405,7 @@ a:hover{
         height: 70vh;
     }
 
-    .contact-info-upper-cointainer{
+    .contact-info-upper-container{
         display: flex;
         justify-content: center;
         border-radius: 2rem;
@@ -415,7 +415,7 @@ a:hover{
         padding: 0.5rem;
     }
 
-    .contact-info-cointainer{
+    .contact-info-container{
         display: flex;
         align-content: center;
         justify-content: center;
@@ -423,7 +423,7 @@ a:hover{
         margin: 1rem;
     }
 
-    .contact-info-cointainer{
+    .contact-info-container{
         font-size: larger;
     }
 
