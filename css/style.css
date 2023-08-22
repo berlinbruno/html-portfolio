@@ -75,12 +75,19 @@ a:hover{
 }
 
 .logo{
+    display: flex;
      font-size: 3rem;
      color: rgb(255, 255, 255);
+     align-items: center;
 }
 
 .logo:hover{
     cursor:default;
+}
+
+.logo-pic{
+    width: 100px;
+    margin-right: 10px;
 }
 
 /* Hamburger menu */
