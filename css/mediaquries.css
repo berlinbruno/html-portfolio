@@ -26,8 +26,8 @@
     #skill, .skill-detail-container{
         margin-top: 2rem;
     }
-
-    #profile, .section-container{
+    
+    .section-container{
         display: block;
     }
 
@@ -38,6 +38,7 @@
     section, .section-container{
         height: fit-content;
     }
+
 
     section{
         margin: 0.5%;
@@ -64,6 +65,7 @@
     #profile{
         height: 83vh;
         margin-bottom: 0;
+        display: block;
     }
 
     article{
@@ -73,6 +75,25 @@
     footer nav{
         height: fit-content;
         margin-bottom: 2rem;
+    }
+
+    .btn-color-1:hover{
+        background:white;
+        color: black;
+    }
+
+    .btn-color-2:hover{
+        background: black;
+        color: white;
+        border-color: white;
+    }
+
+    .logo-pic{
+        width: 75px;
+    }
+
+    .logo{
+        font-size: 2rem;
     }
 
     .about-container, 
@@ -133,4 +154,16 @@
     .text-container{
         text-align: justify;
     }
+}
+
+@media screen and (max-width: 300px){
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.logo-pic{
+    width: 70px;
+}
+
 }

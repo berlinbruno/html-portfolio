@@ -1,0 +1,36 @@
+
+/* Contact Section */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border:var(--details-container-border) 0.1rem solid;
+    background: var(--details-container-background);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+    height: 2rem;
+}

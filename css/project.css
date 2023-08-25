@@ -1,0 +1,23 @@
+/* Projects Section */
+
+.color-container{
+    border-color: var(--details-container-border);
+    background: var(--details-container-background);
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: var(--text-color);
+}
+
+.project-btn{
+    color: var(--btn-color2);
+    border-color: var(--btn-border);
+}
+

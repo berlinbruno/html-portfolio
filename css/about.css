@@ -1,0 +1,55 @@
+/* About Section*/
+
+
+.about-container{
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container, .about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.about-section-text{
+    text-align: justify;
+    text-indent: 2em;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1 1 20vw;
+    background:var(--details-container-background);
+    border-radius: 2rem;
+    border: 0.1rem solid;
+    border-color: var(--details-container-border);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
