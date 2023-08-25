@@ -1,0 +1,111 @@
+/* Profile Section*/
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 83vh;
+}
+
+.section-container{
+    display: flex;
+}
+
+.section_pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+.profile-pic{
+    border-radius: 50%;
+}
+
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p{
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icon */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap:  1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2{
+    border : var(--btn-border) 0.1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+.btn-color-1{
+    background: var(--btn-background1);
+    color: var(--btn-color1);
+}
+
+.btn-color-1:hover{
+    background: var(--btn-hover-background1);
+    color: var(--btn-hover-color1);
+}
+
+.btn-color-2{
+    background: var(--btn-background2);
+    color: var(--btn-color2);
+}
+
+.btn-color-2:hover{
+    border :var(--btn-hover-border) 0.1rem solid;
+    background: var(--btn-hover-background2);
+    color: var(--btn-hover-color2);
+}
+
