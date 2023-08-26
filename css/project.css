@@ -1,23 +1,21 @@
-/* Projects Section */
+/* Project Section */
 
-.color-container{
-    border-color: var(--details-container-border);
-    background: var(--details-container-background);
+.project_details_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.project-img{
+.project_subtitle{
+    margin: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--subtitle-size);
+    margin-bottom: 2rem;
+}
+.project_img{
     border-radius: 2rem;
     width: 100%;
     height: 100%;
-}
-
-.project-title{
-    margin: 1rem;
-    color: var(--text-color);
-}
-
-.project-btn{
-    color: var(--btn-color2);
-    border-color: var(--btn-border);
 }
 

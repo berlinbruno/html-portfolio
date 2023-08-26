@@ -1,25 +1,16 @@
 /* Skill Section */
 
-.skill-subtitle{
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
-}
-
-.skill-details-container{
+.skill_details_container{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.article-container{
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content:space-between;
+.skill_subtitle{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--subtitle-size);
+    margin-bottom: 2rem;
 }
 
 .article{

@@ -8,7 +8,7 @@
     height: 70vh;
 }
 
-.contact-info-upper-container{
+.contact_info_upper_container{
     display: flex;
     justify-content: center;
     border-radius: 2rem;
@@ -18,7 +18,7 @@
     padding: 0.5rem;
 }
 
-.contact-info-container{
+.contact_info_container{
     display: flex;
     align-content: center;
     justify-content: center;
@@ -26,11 +26,6 @@
     margin: 1rem;
 }
 
-.contact-info-container{
-    font-size: larger;
-}
-
-.contact-icon{
-    cursor: default;
-    height: 2rem;
+.contact_info_container{
+    font-size: var(--link-size);
 }

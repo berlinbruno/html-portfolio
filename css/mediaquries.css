@@ -1,62 +1,58 @@
-@media screen and (max-width: 1400px){
+@media screen and (max_width: 1400px){
     #profile{
+        width: auto;
+        display: flex;
         height: 83vh;
         margin-bottom: 6rem;
     }
 
-    #projects{
+    #project{
         height: auto;
     }
 
-    .about-container{
+    .about_container{
         flex-wrap:wrap;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    #desktop-nav{
+@media screen and (max_width: 1200px) {
+    #desktop_nav{
         display: none;
     }
 
-    #hamburger-nav{
+    #hamburger_nav{
         display: flex;
         z-index: 2;
     }
 
-    #skill, .skill-detail-container{
+    #skill, .skill_detail_container
+    ,.project_detail_container{
         margin-top: 2rem;
-    }
-    
-    .section-container{
-        display: block;
     }
 
     .arrow{
         display: none;
     }
 
-    section, .section-container{
-        height: fit-content;
-    }
-
-
     section{
+        height: fit-content;
         margin: 0.5%;
     }
 
-    .section_pic-container{
+    .profile_section_pic_container,
+    .about_section_pic_container{
         width: 275px;
         height: 275;
         margin: 0 auto 2rem;
         justify-content: center;
     }
 
-    .about-container{
+    .about_container{
         margin-top: 0;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max_width: 600px){
 
     #contact{
         height: 40vh;
@@ -73,96 +69,95 @@
     }
 
     footer nav{
-        height: fit-content;
+        height: fit_content;
         margin-bottom: 2rem;
     }
 
-    .btn-color-1:hover{
+    .btn_color_1:hover{
         background:white;
         color: black;
     }
 
-    .btn-color-2:hover{
+    .btn_color_2:hover{
         background: black;
         color: white;
         border-color: white;
     }
 
-    .logo-pic{
+    .nav_logo_pic{
         width: 75px;
     }
 
-    .logo{
+    .nav_logo{
         font-size: 2rem;
     }
 
-    .about-container, 
-    .contact-info-upper-container,
-    .btn-container{
+    .about_container, 
+    .contact_info_upper_container,
+    .btn_container{
         flex-wrap: wrap;
     }
 
-    .about-container{
+    .about_container{
         display: block;
     }
 
-    .details-container{
+    .details_container{
         margin-bottom: 0.5rem;
     }
 
-    .contact-info-upper-container{
+    .contact_info_upper_container{
         gap: 1rem;
     }
 
-    .contact-info-container{
+    .contact_info_container{
         margin: 0;
     }
 
-    .contact-info-container p,
-    .nav-links li a{
+    .contact_info_container p,
+    .nav_links li a{
         font-size: 1rem;
     }
 
-    .skill-subtitle{
+    .skill_subtitle,
+    .project_subtitle{
         font-size: 1.25rem;
     }
 
-    .logo{
+    .nav_logo{
         font-size: 2rem;
     }
 
-    .nav-links{
+    .nav_links{
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
 
-    .section_pic-container{
+    .profile_section_pic_container,
+    .about_section_pic_container{
         width: auto;
         height: 46vw;
         justify-content: center;
     }
 
-    .section__text__p2{
+    .section_text_p2{
         font-size: 1.25rem;
     }
 
-    .title{
+    .section_title,
+    .profile_title{
         font-size: 2rem;
-    }
-
-    .text-container{
-        text-align: justify;
     }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max_width: 300px){
 
-.logo{
+.nav_logo{
     font-size: 1.5rem;
 }
 
-.logo-pic{
+.nav_logo_pic{
     width: 70px;
 }
 
