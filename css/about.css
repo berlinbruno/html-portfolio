@@ -1,0 +1,34 @@
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+  }
+  
+  .about-section-container {
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+  }
+  
+  .about-section-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .about-pic {
+    border-radius: 2rem;
+  }
+  
+  .about-section-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }

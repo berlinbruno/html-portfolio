@@ -1,0 +1,34 @@
+/* PROJECTS SECTION */
+
+#project {
+    position: relative;
+  }
+  
+  .project-section-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .project-btn {
+    color: var(--primary-color);
+    border-color: rgb(163, 163, 163);
+  }
+  
+  

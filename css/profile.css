@@ -1,0 +1,52 @@
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+  
+  .profile-section-pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .profile-pic{
+    border-radius: 50%;
+  }
+  
+  .profile-section-text-container {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .profile-section-text-container p{
+    font-weight: 600;
+  }
+  
+  .profile-section-text-intro{
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .profile-section-text-role{
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-section-text-name{
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .about-section-socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }

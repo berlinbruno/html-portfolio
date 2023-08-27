@@ -1,0 +1,30 @@
+/* SKILL SECTION */
+
+#skill {
+    position: relative;
+  }
+  .skill-section-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .section-article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content:start;
+    gap: 0.5rem;
+  }
+  
+  article .icon {
+    cursor: default;
+  }
