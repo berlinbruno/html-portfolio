@@ -1,51 +1,52 @@
-/* Profile Section*/
+/* PROFILE SECTION */
 
-#profile{
+#profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 83vh;
-}
-
-.profile_section_pic_container{
+    height: 80vh;
+  }
+  
+  .profile-section-pic-container {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto;
-}
-
-.profile_pic{
+    margin: auto 0;
+  }
+  
+  .profile-pic{
     border-radius: 50%;
-}
-
-.profile_section_text{
+  }
+  
+  .profile-section-text-container {
     align-self: center;
     text-align: center;
-    margin: auto;
-}
-
-.profile_section_text p{
+  }
+  
+  .profile-section-text-container p{
     font-weight: 600;
-}
-
-.profile_section_text_p1 {
-    font-size: var(--intro-size);
+  }
+  
+  .profile-section-text-intro{
+    color: var(--secondary-color);
     text-align: center;
-}
-.profile_title{
-    font-size: var(--name-size);
-    text-align: center;
-    color: var(--text-color);
-}
-
-.profile_section_text_p2 {
-    font-size: var(--role-size);
+  }
+  
+  .profile-section-text-role{
+    color: var(--secondary-color);
+    font-size: 1.75rem;
     margin-bottom: 1rem;
-}
-
-#socials_container{
+  }
+  
+  .profile-section-text-name{
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .about-section-socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
-}
+  }
