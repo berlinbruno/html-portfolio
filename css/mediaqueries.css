@@ -1,0 +1,137 @@
+@media screen and (max-width: 1700px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .section-about-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #skill,
+  .about-section-details-container,
+  .skill-section-details-container,
+  .project-section-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .about-section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+  section,
+  .about-section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .profile-section-pic-container,
+  .about-section-pic-container{
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .section-about-container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .profile-section-pic-container,
+  .about-section-pic-container{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+  }
+
+  .profile-section-text-role {
+    font-size: 1.25rem;
+  }
+  .section-title,
+  .profile-section-text-name {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .section-about-container,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .skill-subtitle {
+    font-size: 1.25rem;
+  }
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-logo-pic{
+    width: 75px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .profile-section-pic-container,
+  .about-section-pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .profile-section-text-role {
+    font-size: 1.25rem;
+  }
+  .section-title,
+  .profile-section-text-name {
+    font-size: 2rem;
+  }
+  .about-section-text-summary {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .nav-logo {
+    font-size: 1.25rem;
+  }
+
+  .nav-logo-pic{
+    width: 50px;
+  }
+}

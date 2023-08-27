@@ -1,23 +1,34 @@
-/* Projects Section */
+/* PROJECTS SECTION */
 
-.color-container{
-    border-color: var(--details-container-border);
-    background: var(--details-container-background);
-}
-
-.project-img{
+#project {
+    position: relative;
+  }
+  
+  .project-section-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .project-img {
     border-radius: 2rem;
-    width: 100%;
-    height: 100%;
-}
-
-.project-title{
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
     margin: 1rem;
-    color: var(--text-color);
-}
-
-.project-btn{
-    color: var(--btn-color2);
-    border-color: var(--btn-border);
-}
-
+    color: var(--primary-color);
+  }
+  
+  .project-btn {
+    color: var(--primary-color);
+    border-color: rgb(163, 163, 163);
+  }
+  
+  

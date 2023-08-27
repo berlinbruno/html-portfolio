@@ -1,0 +1,11 @@
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+    align-items: end;
+  }
+  
+  footer p {
+    text-align: center;
+  }

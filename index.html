@@ -1,256 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio">
-    <meta name="keywords" content="Portfolio, Html, CSS, JavaScript">
-    <meta name="author" content="Berlin Bruno">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/skill.css">
     <link rel="stylesheet" href="./css/project.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/mediaquries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
+
+    
+  </head>
+  <body>
     <div id="particles-js"></div>
-       <nav id="desktop-nav">
-        <div class="logo"><img src="./assets/logo-white.svg" alt="Loading..." class="logo-pic">Berlin Bruno</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="./#about">About</a></li>
-                <li><a href="./#skill">Skills</a></li>
-                <li><a href="./#projects">Project</a></li>
-                <li><a href="./#contact">Contact</a></li>
-            </ul>
+    <nav id="desktop-nav">
+      <div class="nav-logo"><img src="./assets/logo-dark.svg"
+                                  src-light="./assets/logo-dark.svg"
+                                  src-dark="./assets/logo-light.svg"
+                                  class="nav-logo-pic">
+      <h3>Berlin Bruno</h3>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><img id="modeToggle" 
+                  src="./assets/theme-dark.png"
+                  src-light="./assets/theme-dark.png"
+                  src-dark="./assets/theme-light.png" 
+                  class="icon"></li>
+        </ul>
+      </div>
+      
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="nav-logo"><img src="./assets/logo-dark.svg"
+                                  src-light="./assets/logo-dark.svg"
+                                  src-dark="./assets/logo-light.svg" 
+                                  class="nav-logo-pic">
+        <h3>Berlin Bruno</h3>
         </div>
-       </nav> 
-       <nav id="hamburger-nav">
-        <div class="logo"><img src="./assets/logo-white.svg" alt="Loading..." class="logo-pic">Berlin Bruno</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                <span>-</span>
-                <span></span>
-                <span></span>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><img id="modeToggle2" 
+                  src="./assets/theme-dark.png"
+                  src-light="./assets/theme-dark.png"
+                  src-dark="./assets/theme-light.png"
+                  class="icon"></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile-section-pic-container">
+        <img src="./assets/profile-pic.png" 
+        alt="profile picture" 
+        class="profile-pic"/>
+      </div>
+      <div class="profile-section-text-container">
+        <p class="profile-section-text-intro">Hello, I'm</p>
+        <h1 class="profile-section-text-name">Berlin Bruno</h1>
+        <p class="profile-section-text-role">FullStack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="about-section-socials-container">
+          <img
+            src="./assets/linkedin-dark.png"
+            src-light="./assets/linkedin-dark.png"
+            src-dark="./assets/linkedin-light.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/berlinbruno'"
+          />
+          <img
+            src="./assets/github-dark.png"
+            src-light="./assets/github-dark.png"
+            src-dark="./assets/github-light.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/berlinbruno'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="section-title">About Me</h1>
+      <div class="about-section-container">
+        <div class="about-section-pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-section-details-container">
+          <div class="section-about-container">
+            <div class="section-details-container">
+              <img
+                src="./assets/education-dark.png"
+                src-light="./assets/education-dark.png"
+                src-dark="./assets/education-light.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc Computer Science<br />Master of Computer Application</p>
             </div>
-            <div class="menu-links">
-                <li><a href="./#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="./#skill" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="./#projects" onclick="toggleMenu()">Project</a></li>
-                <li><a href="./#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+          <div class="about-section-text-summary">
+            <p>
+              Passionate learner with Good knowledge in Java FullStack
+              programming, Unity game development and .NET MAUI application
+              construction eager to contribute to the software development
+              industry. Focusing on innovation, hands-on learning, and proactive
+              behavior. I embrace challenges and technology with enthusiasm,
+              positioning myself as a dynamic asset.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/downarrow-dark.png"
+        src-light="./assets/downarrow-dark.png"
+        src-dark="./assets/downarrow-light.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skill'"
+      />
+    </section>
+    <section id="skill">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="section-title">Skills</h1>
+      <div class="skill-section-details-container">
+        <div class="section-about-container">
+          <div class="section-details-container">
+            <h2 class="section-subtitle">Frontend Development</h2>
+            <div class="section-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
             </div>
+          </div>
+          <div class="section-details-container">
+            <h2 class="section-subtitle">Backend Development</h2>
+            <div class="section-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="section-details-container">
+            <h2 class="section-subtitle">Game & App Development</h2>
+            <div class="section-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity Game Engine</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark-dark.png"
+                  src-light="./assets/checkmark-dark.png"
+                  src-dark="./assets/checkmark-light.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.Net MAUI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-       </nav>
-       <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Berlin Bruno Profile Picture" class="profile-pic">
-        </div>
-        <div class="section_text">
-                <p class="section_text_p1">Hello, I'm</p>
-                <h1 class="title">Berlin Bruno</h1>
-                <p class="section_text_p2">FullStack Developer</p>
+      </div>
+      <img
+        src="./assets/downarrow-dark.png"
+        src-light="./assets/downarrow-dark.png"
+        src-dark="./assets/downarrow-light.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#project'"
+      />
+    </section>
+    <section id="project">
+      <p class="section-text-p1">Browse My Recent</p>
+      <h1 class="section-title">Projects</h1>
+      <div class="project-section-details-container">
+        <div class="section-about-container">
+          <div class="section-details-container color-container">
+            <div class="section-article-container">
+              <img
+                src="./assets/inprogress.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="section-subtitle project-section-title">Weather App</h2>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
-                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin-light.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/berlinbruno'">
-                <img src="./assets/github-light.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/berlinbruno'">
+          </div>
+          <div class="section-details-container color-container">
+            <div class="section-article-container">
+              <img
+                src="./assets/coming-soon.webp"
+                alt="Project 2"
+                class="project-img"
+              />
             </div>
+            <h2 class="section-subtitle project-section-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="section-details-container color-container">
+            <div class="section-article-container">
+              <img
+                src="./assets/coming-soon.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="section-subtitle project-section-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="section-details-container color-container">
+            <div class="section-article-container">
+              <img
+                src="./assets/coming-soon.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="section-subtitle project-section-title">Project Four</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-        <img src="./assets/downarrow-light.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#about'">
-       </section>
-       <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/profile-pic.png" alt="Profile Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-container">
-                    <div class="details-container">
-                        <img src="./assets/education-light.png" alt="Education Icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.sc Computer Science<br>Master of Computer Application</p>
-                    </div>
-                </div>
-                <div class="section_text">
-                    <p class="about-section-text">Passionate learner with Good knowledge in Java FullStack programming, Unity game development and .NET MAUI application construction eager to contribute to the software development industry. Focusing on innovation, hands-on learning, and proactive behavior. I embrace challenges and technology with enthusiasm, positioning myself as a dynamic asset.</p>
-                </div>
-            </div>
+      </div>
+      <img
+        src="./assets/downarrow-dark.png"
+        src-light="./assets/downarrow-dark.png"
+        src-dark="./assets/downarrow-light.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="section-title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email-dark.png"
+            src-light="./assets/email-dark.png"
+            src-dark="./assets/email-light.png"
+            alt="Email icon"
+            class="icon"
+          />
+          <p><a href="mailto:berlinbruno112@gmail.com" target="_blank">berlinbruno112@gmail.com</a></p>
         </div>
-        <img src="./assets/downarrow-light.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skill'">
-       </section>
-       <section id="skill">
-        <p class="section__text__p1">Explore Me</p>
-        <h1 class="title">Skills</h1>
-        <div class="skill-details-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="skill-subtitle">FrontEnd Development</h2>
-                    <div class="article-container">
-                    <article>
-                        <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Beginner</p>
-                        </div>
-                    </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="skill-subtitle">BackEnd Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                                <div>
-                                    <h3>Java</h3>
-                                    <p>Beginner</p>
-                                </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                                <div>
-                                    <h3>C#</h3>
-                                    <p>Beginner</p>
-                                </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                                <div>
-                                    <h3>SQL</h3>
-                                    <p>Beginner</p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="skill-subtitle">Others</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                                <div>
-                                    <h3>Unity</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                                <div>
-                                    <h3>Git & GitHub</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark-light.png" alt="Experience Icon" class="icon">
-                                <div>
-                                    <h3>.Net MAUI</h3>
-                                    <p>Beginner</p>
-                                </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin-dark.png"
+            src-light="./assets/linkedin-dark.png"
+            src-dark="./assets/linkedin-light.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/berlinbruno" target="_blank">LinkedIn</a></p>
         </div>
-        <img src="./assets/downarrow-light.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
-       </section>
-       <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
-            <div class="skill-details-container">
-                <div class="about-container">
-                    <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/inprogress.webp" alt="Loading..." class="project-img">
-                    </div>
-                    <h2 class="skill-subtitle project-title">Weather App</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Details</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Link</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/coming-soon.webp" alt="Loading..." class="project-img">
-                    </div>
-                    <h2 class="skill-subtitle project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Details</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Link</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/coming-soon.webp" alt="Loading..." class="project-img">
-                    </div>
-                    <h2 class="skill-subtitle project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/coming-soon.webp" alt="Loading..." class="project-img">
-                    </div>
-                    <h2 class="skill-subtitle project-title">Project Four</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <img src="./assets/downarrow-light.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
-       </section>
-       <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email-light.png" alt="Loading..." class="icon contact-info">
-                <p><a href="mailto:berlinbruno112@gmail.com">berlinbruno112@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin-light.png" alt="Loading..." class="icon contact-info">
-                <p><a href="https://linkedin.com/in/berlinbruno" target="_blank">LinkedIn</a></p>
-            </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+          </ul>
         </div>
-       </section>
-       <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="./#about">About</a></li>
-                    <li><a href="./#skill">Skills</a></li>
-                    <li><a href="./#projects">Project</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Berlin Bruno. All Rights Reserved. </p>
-       </footer>
+      </nav>
+      <p>Copyright &#169; 2023 Berlin Bruno. All Rights Reserved.</p>
+    </footer>
+    
     <script src="./javascript/script.js"></script>
     <script src="./javascript/particles.js"></script>
     <script src="./javascript/app.js"></script>
-</body>
+    
+  </body>
 </html>
