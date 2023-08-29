@@ -1,7 +1,11 @@
 /* ABOUT SECTION */
 
-#about {
+  #about {
     position: relative;
+  }
+
+  #about p,h3 {
+    color: var(--primary-color);
   }
   
   .about-section-container {
