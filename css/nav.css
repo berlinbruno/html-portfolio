@@ -27,18 +27,32 @@ nav {
 a {
   color: var(--primary-color);
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: var(--text-color-hover);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: var(--text-decoration-color);
 }
 
 .nav-logo-pic{
   width: 100px;
+}
+
+.nav-logo-pic:hover{
+  animation-name: logo-animation;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes logo-animation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
 }
 
 .nav-logo {
@@ -108,12 +122,25 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-color-hover);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: var(--text-decoration-color);
+}
+
 .menu-links li {
   list-style: none;
 }
 
 .menu-links.open {
   max-height: 300px;
+  background: var(--container-color);
 }
 
 .hamburger-icon.open span:first-child {

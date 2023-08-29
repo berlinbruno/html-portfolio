@@ -10,8 +10,9 @@ const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const logo = document.querySelectorAll(".nav-logo-pic");
 const currentTheme = localStorage.getItem("theme");
-if(currentTheme === "dark"){
-  setDarkMode();
+
+if(currentTheme === "light"){
+  setLightMode();
 }
 btn.addEventListener("click", function() {
   setTheme();
@@ -24,26 +25,25 @@ btn2.addEventListener("click", function() {
 function setTheme(){
   let currentTheme = document.body.getAttribute("theme");
 
-  if(currentTheme === "dark"){
-    setLightMode();
-
+  if(currentTheme === "light"){
+    setDarkMode();
     
-  pJSDom[0].pJS.particles.color.value = '#000000';
-  pJSDom[0].pJS.particles.line_linked.color = '#000000';
+  pJSDom[0].pJS.particles.color.value = '#ffffff';
+  pJSDom[0].pJS.particles.line_linked.color = '#ffffff';
   pJSDom[0].pJS.fn.particlesRefresh();
     
   }else{
-    setDarkMode();
+    setLightMode();
     
-    pJSDom[0].pJS.particles.color.value = '#ffffff';
-    pJSDom[0].pJS.particles.line_linked.color = '#ffffff';
+    pJSDom[0].pJS.particles.color.value = '#000000';
+    pJSDom[0].pJS.particles.line_linked.color = '#000000';
     pJSDom[0].pJS.fn.particlesRefresh();
     
   }
 }
 
 function setDarkMode(){
-  document.body.setAttribute("theme", "dark");
+  document.body.removeAttribute("theme");
   localStorage.setItem("theme", "dark");
   
   themeIcons.forEach(icon => {
@@ -62,7 +62,7 @@ function setDarkMode(){
 
 function setLightMode(){
 
-  document.body.removeAttribute("theme");
+  document.body.setAttribute("theme","light");
   localStorage.setItem("theme", "light");
 
 
