@@ -74,6 +74,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p{
+  color: var(--secondary-color);
+}
+
 
 
 /* TRANSITION */
