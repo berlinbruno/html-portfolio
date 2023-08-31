@@ -1,7 +1,11 @@
 /* ABOUT SECTION */
 
-#about {
+  #about {
     position: relative;
+  }
+
+  #about p,h3 {
+    color: var(--primary-color);
   }
   
   .about-section-container {
@@ -27,8 +31,4 @@
     flex-direction: column;
   }
   
-  .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-  }
+  

@@ -5,21 +5,57 @@
 /* COLORS */
 
 :root{
+  --background-color:#000000;
+  --primary-color:#f8f9fa;
+  --secondary-color:#e9ecef;
+  --border-color:#f8f9fa;
+  --container-color:#343a4042;
 
-  --background-color:rgb(255, 252, 252);
-  --primary-color:rgb(0, 0, 0);
-  --secondary-color:rgb(0, 0, 0);
-  --border-color:rgb(0, 0, 0);
-  --container-color:rgba(255, 255, 255, 0.5);
-  --btn-background-color1:rgb(53,53,53);
+  --text-color-hover:#0088ff;
+  --text-decoration-color: #0088ff;
+
+  --btn-border-color: #f8f9fa;
+
+  --btn-background-color1:#343a40;
+
+  --btn-color1:#f8f9fa;
+  --btn-color2:#f8f9fa;
+
+  --btn-color-hover1:#f8f9fa;
+  --btn-color-hover2:#f8f9fa;
+
+  --btn-background-hover2:#343a40;
+
+  --btn-border-hover1:#f8f9fa;
+  --btn-border-hover2:#f8f9fa;
+
 }
 
-[theme='dark']{
-  --background-color:rgb(0, 0, 0);
-  --primary-color:rgb(255, 255, 255);
-  --secondary-color:rgb(214, 214, 214);
-  --border-color:rgb(255, 255, 255);
-  --container-color:rgba(0, 0, 0, 0.5);
+[theme='light']{
+  
+  --background-color:#f8f9fa;
+  --primary-color:#000000;
+  --secondary-color:#343a40;
+  --border-color:#000000;
+  --container-color:#e9ecef8e;
+
+  --text-color-hover:#0088ff;
+  --text-decoration-color: #0088ff;
+
+  --btn-border-color: #000000;
+
+  --btn-background-color1:#343a40;
+
+  --btn-color1:#f8f9fa;
+  --btn-color2:#212529;
+
+  --btn-color-hover1:#212529;
+  --btn-color-hover2:#f8f9fa;
+
+  --btn-background-hover2:#343a40;
+
+  --btn-border-hover1:rgb(53,53,53);
+  --btn-border-hover2:rgb(53,53,53);
 }
 
 * {
@@ -38,9 +74,12 @@ html {
   scroll-behavior: smooth;
 }
 
-p,h3 {
+p{
   color: var(--secondary-color);
 }
+
+
+
 
 /* TRANSITION */
 
@@ -117,6 +156,18 @@ section {
   height: 2rem;
 }
 
+.bi{
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -135,7 +186,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: var(--border-color) 0.1rem solid;
+  border: var(--btn-border-color) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -143,23 +194,26 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+.btn-color-1{
+  background: var(--btn-background-color1);
+  color: var(--btn-color1);
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: none;
+  border-color: var(--btn-border-hover1);
+  color: var(--btn-color-hover1);
+}
+
+.btn-color-2:hover {
+  background: var(--btn-background-hover2);
+  color: var(--btn-color-hover2);
+  border: var(--btn-border-hover2) 0.1rem solid;
 }
 
 .btn-color-2 {
   background: none;
-  color: var(--primary-color);
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  color: var(--btn-color2);
 }
 
 .btn-container {
