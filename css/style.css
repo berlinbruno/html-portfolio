@@ -80,6 +80,7 @@ p{
 
 
 
+
 /* TRANSITION */
 
 a,
@@ -153,6 +154,18 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.bi{
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }
 
 /* BUTTONS */
