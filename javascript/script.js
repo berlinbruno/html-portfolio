@@ -8,7 +8,6 @@ function toggleMenu() {
 const btn = document.getElementById("modeToggle");
 const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
-const logo = document.querySelectorAll(".nav-logo-pic");
 const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme === "light") {
@@ -50,10 +49,6 @@ function setDarkMode() {
   themeIcons.forEach((icon) => {
     icon.src = icon.getAttribute("src-dark");
   });
-
-  logo.forEach((icon) => {
-    icon.src = icon.getAttribute("src-dark");
-  });
 }
 
 function setLightMode() {
@@ -61,10 +56,6 @@ function setLightMode() {
   localStorage.setItem("theme", "light");
 
   themeIcons.forEach((icon) => {
-    icon.src = icon.getAttribute("src-light");
-  });
-
-  logo.forEach((icon) => {
     icon.src = icon.getAttribute("src-light");
   });
 }

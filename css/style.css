@@ -29,6 +29,8 @@
   --btn-border-hover1:#f8f9fa;
   --btn-border-hover2:#f8f9fa;
 
+  --logo-color:rgb(255, 255, 255);
+
 }
 
 [theme='light']{
@@ -56,6 +58,8 @@
 
   --btn-border-hover1:rgb(53,53,53);
   --btn-border-hover2:rgb(53,53,53);
+
+  --logo-color:rgb(0, 0, 0);
 }
 
 * {
@@ -150,6 +154,7 @@ section {
 
 
 /* ICONS */
+
 
 .icon {
   cursor: pointer;

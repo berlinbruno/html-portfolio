@@ -40,7 +40,7 @@ a:hover {
   width: 100px;
 }
 
-.nav-logo-pic:hover{
+#Layer_1:hover{
   animation-name: logo-animation;
   animation-iteration-count: 1;
   animation-duration: 2s;
