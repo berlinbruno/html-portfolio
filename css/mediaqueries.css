@@ -1,4 +1,4 @@
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -6,9 +6,14 @@
   .section-about-container {
     flex-wrap: wrap;
   }
+
+  #contact,
+  #project {
+    height: fit-content;
+  }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
   }
