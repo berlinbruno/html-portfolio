@@ -67,6 +67,10 @@
   .profile-section-text-name {
     font-size: 2rem;
   }
+
+  .nav-logo-pic{
+    width: 80px;
+  }
 }
 
 @media screen and (max-width: 600px) {
