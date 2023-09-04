@@ -3,6 +3,7 @@
 nav,
 .nav-links {
   display: flex;
+  align-items: center;
 }
 
 nav {
@@ -21,7 +22,7 @@ nav {
   width: max-content;
   display: flex;
   margin: auto;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 a {
