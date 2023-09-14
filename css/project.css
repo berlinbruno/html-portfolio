@@ -7,7 +7,12 @@
   .project-section-details-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+  }
+
+  #project .section-details-container{
+    max-width: initial;
   }
   
   .color-container {
