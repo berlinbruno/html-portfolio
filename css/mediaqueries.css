@@ -14,12 +14,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
+
   #skill,
   .about-section-details-container,
   .skill-section-details-container,
@@ -53,6 +48,14 @@
 }
 
 @media screen and (max-width: 1050px) {
+
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  
   .profile-section-pic-container,
   .about-section-pic-container{
     width: 200px;
@@ -74,6 +77,7 @@
 }
 
 @media screen and (max-width: 600px) {
+
   #contact,
   footer {
     height: 40vh;
