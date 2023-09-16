@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -47,14 +47,9 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1024px) {
 
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
+  
   
   .profile-section-pic-container,
   .about-section-pic-container{
@@ -76,7 +71,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
   #contact,
   footer {
     height: 40vh;
@@ -138,7 +139,7 @@
   }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 375px){
   .nav-logo {
     font-size: 1.25rem;
   }
