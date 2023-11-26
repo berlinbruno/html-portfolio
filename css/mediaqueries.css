@@ -69,6 +69,11 @@
   .nav-logo-pic{
     width: 80px;
   }
+
+  .about-section-pic-container{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -142,9 +147,7 @@
     font-size: 15px;
   }
 
-  .about-section-pic-container{
-    display: none;
-  }
+  
 
 }
 
