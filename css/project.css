@@ -30,6 +30,11 @@
     margin: 1rem;
     color: var(--primary-color);
   }
+
+  .project-description{
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
   
   .project-btn {
     color: var(--primary-color);
